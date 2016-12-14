@@ -28,72 +28,52 @@
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/3.jpg" alt="">
+				<img src="images/1.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/4.jpg" alt="">
+				<img src="images/2.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/5.jpg" alt="">
+				<img src="images/1.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/6.jpg" alt="">
+				<img src="images/2.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/7.jpg" alt="">
+				<img src="images/1.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/8.jpg" alt="">
+				<img src="images/2.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/9.jpg" alt="">
+				<img src="images/1.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/10.jpg" alt="">
+				<img src="images/2.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/11.jpg" alt="">
+				<img src="images/1.jpg" alt="">
 			</div>
 		</div>
 		<div class="gird img-box-x">
 			<div class="nr shadow">
-				<img src="images/12.jpg" alt="">
-			</div>
-		</div>
-		<div class="gird img-box-x">
-			<div class="nr shadow">
-				<img src="images/13.jpg" alt="">
-			</div>
-		</div>
-		<div class="gird img-box-x">
-			<div class="nr shadow">
-				<img src="images/14.jpg" alt="">
-			</div>
-		</div>
-		<div class="gird img-box-x">
-			<div class="nr shadow">
-				<img src="images/14.jpg" alt="">
-			</div>
-		</div>
-		<div class="gird img-box-x">
-			<div class="nr shadow">
-				<img src="images/14.jpg" alt="">
+				<img src="images/2.jpg" alt="">
 			</div>
 		</div>
 	</div>
@@ -106,11 +86,16 @@ window.onload=function(){
     	docH=$("body").height();
     	scrTop=$(window).scrollTop();
     	if((scrTop+winH+100)>=docH){
+    		var a
     		for (var i = 1; i <7; i++) {
-    			console.log(i)
+    			if(i%2==0){
+    				a=1
+    			}else{
+    				a=2
+    			}
     			var gird=$('<div class="gird img-box-x">');
     			var nr=$('<div class="nr shadow">');
-    			var img=$('<img src="images/'+i+'.jpg" alt="">');
+    			var img=$('<img src="images/'+a+'.jpg" alt="">');
     			$("#container").append(gird.append(nr.append(img)))
     		};
     		$("#container").falless({offsetY:15,})
