@@ -99,7 +99,8 @@
 	</div>
 </body>
 <script>
-    $("#container").falless({offsetY:15,})
+window.onload=function(){
+	$("#container").falless({offsetY:15,})
     window.onscroll=function(){
     	winH=$(window).height();
     	docH=$("body").height();
@@ -115,6 +116,8 @@
     		$("#container").falless({offsetY:15,})
     	}
     }
+}
+    
     
 </script>
 </html>
